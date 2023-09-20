@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+  font-family: Optimist, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background: #f8f4f1;
+}
+
+.App {
+  overflow: hidden;
+  height: 100%;
+}
