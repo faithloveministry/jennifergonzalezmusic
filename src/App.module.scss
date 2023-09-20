@@ -11,6 +11,8 @@ body {
 }
 
 .App {
+  display: flex;
+  flex-flow: column;
   overflow: hidden;
   height: 100%;
 }
