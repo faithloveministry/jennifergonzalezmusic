@@ -6,7 +6,7 @@ export const Home = () => (
       <div class={styles.Card}>
         <h2>Te Invitamos a Conocernos</h2>
         <div>
-          En este Site me conocerás personalmente, de una forma única y transparente, donde encontrarás Espiritualidad
+          En este site, me conocerás personalmente, de una forma única y transparente, donde encontrarás Espiritualidad
           genuina, Testimonios en nuestros Vlogs y Vivencias en nuestro Podcast. Nuestra Música y Marca personal en
           nuestra Tienda de <i>Faith&LoveMerchandise</i>. Tambien conocerás un lado de mi nunca antes visto como
           Emprendedora en Nuestra Tienda Online de Modesty Love Design & Products donde encontraras un sin fin de
@@ -28,8 +28,8 @@ export const Home = () => (
           En el año 2014, Jennifer González experimentó un importante acontecimiento en su carrera cuando Dios le
           permitió lanzar su primer sencillo titulado "Caminaré". Este evento abrió las puertas para que destacara en el
           ámbito de la música cristiana, compartiendo escenario con reconocidos intérpretes como Mike y Laura Rosario de
-          Revive and Forgiven, Fausto y Camille Mercado, Daniel y Naomi López, Laura Ceballos, Bryan Daniel, Josue
-          Interiano, Jorge De La Torre, Josue Baez y Roger Castillo.
+          <i>Revive and Forgiven</i>, Fausto y Camille Mercado, Daniel y Naomi López, Laura Ceballos, Bryan Daniel,
+          Josue Interiano, Jorge De La Torre, Josue Baez y Roger Castillo.
         </div>
         <div>
           En junio de 2016, su trayectoria musical dio un paso más allá al llevarla a ministrar internacionalmente en la
