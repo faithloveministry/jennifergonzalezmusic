@@ -1,0 +1,13 @@
+.Footer {
+  padding: 1.5rem 0;
+  border-top: 1px solid #42213d;
+  background: #ffb7c3;
+
+  & > span {
+    display: flex;
+    gap: 0.4rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+  }
+}

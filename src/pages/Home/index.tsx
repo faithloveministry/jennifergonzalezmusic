@@ -1,8 +1,9 @@
+import { Footer } from '@/components/Footer';
 import styles from '@/pages/Home/Home.module.scss';
 
 export const Home = () => (
   <div class={styles.Home}>
-    <div>
+    <div class={styles.body}>
       <div class={styles.Card}>
         <h2>Te Invitamos a Conocernos</h2>
         <div>
@@ -16,6 +17,25 @@ export const Home = () => (
       </div>
       <div class={styles.Card}>
         <h2>Sobre Mi</h2>
+        <div>
+          Jennifer González es una apasionada de la nutrición y el bienestar, una emprendedora multifacética y una
+          escritora de corazón. Además de sus habilidades como compositora y cantante, asume diversos roles en la
+          actualidad, compartiendo su amor por el bienestar y la espiritualidad con mujeres de todo el mundo.
+        </div>
+        <div>
+          Actualmente, ministra grupos de apoyo transformadores como "Dios Me Hizo Mujer con Propósito Divino" y
+          "Florece en Salud y Bienestar". Desde 2007, su ministerio musical ha llevado el mensaje de salvación a través
+          de cánticos que elevan al cielo.
+        </div>
+        <div>
+          Jennifer ha tenido el privilegio de llevar su música y su mensaje a países como República Dominicana, México,
+          Puerto Rico y Estados Unidos, tocando corazones como cantante y oradora.
+        </div>
+        <div>Esta noche, te invitamos a descubrir su más reciente producción musical: "La esencia de tu amor".</div>
+        <div>
+          Jennifer González, una verdadera líder en el emprendimiento y el bienestar en Cristo Jesús. ¡Bienvenidos a su
+          mundo de inspiración y transformación en su sitio web!
+        </div>
       </div>
       <div class={styles.Card}>
         <h2>Trayectoria Musical</h2>
@@ -81,5 +101,6 @@ export const Home = () => (
         </div>
       </div>
     </div>
+    <Footer />
   </div>
 );

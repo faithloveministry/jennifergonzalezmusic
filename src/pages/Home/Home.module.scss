@@ -2,9 +2,8 @@
   overflow: hidden auto;
   height: 100%;
   color: #2d0c28;
-  text-align: center;
 
-  & > div {
+  & > .body {
     display: flex;
     flex-flow: column;
     row-gap: 2rem;
@@ -13,6 +12,9 @@
     padding: 2rem 0;
 
     & > .Card {
+      display: flex;
+      flex-flow: column;
+      row-gap: 1rem;
       padding: 1rem;
       border-radius: 12px;
       background: #ffb7c3;
@@ -24,6 +26,7 @@
         font-weight: 400;
         font-size: 3.5rem;
         font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
       }
 
       & > div {
@@ -33,6 +36,9 @@
   }
 
   button {
+    width: 100%;
+    max-width: 14rem;
+    margin: auto;
     margin-top: 1rem;
     padding: 0.5rem 1rem;
     border: none;
