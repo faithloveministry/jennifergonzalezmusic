@@ -1,20 +1,23 @@
 .Home {
   overflow: hidden auto;
   height: 100%;
+  background: linear-gradient(#f8f4f1 0 50%, #ffb7c3 50% 100%);
   color: #2d0c28;
+  overscroll-behavior: contain; /* stylelint-disable-line plugin/no-unsupported-browser-features */
 
   & > .body {
     display: flex;
     flex-flow: column;
     row-gap: 2rem;
-    width: clamp(45%, 70rem, 90%);
-    margin: auto;
     padding: 2rem 0;
+    background: #f8f4f1;
 
     & > .Card {
       display: flex;
       flex-flow: column;
       row-gap: 1rem;
+      width: clamp(45%, 70rem, 90%);
+      margin: auto;
       padding: 1rem;
       border-radius: 12px;
       background: #ffb7c3;
