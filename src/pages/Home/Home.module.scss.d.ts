@@ -1,6 +1,9 @@
 declare const classNames: {
   readonly Home: 'Home';
   readonly body: 'body';
-  readonly Card: 'Card';
+  readonly intro: 'intro';
+  readonly top: 'top';
+  readonly bottom: 'bottom';
+  readonly card: 'card';
 };
 export = classNames;

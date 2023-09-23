@@ -1,33 +1,60 @@
 .Home {
   overflow: hidden auto;
   height: 100%;
-  background: linear-gradient(#f8f4f1 0 50%, #ffb7c3 50% 100%);
-  color: #2d0c28;
+  background: linear-gradient(#ffd8e9 0 50%, #ffb7c3 50% 100%);
+  color: #2a1e36;
   overscroll-behavior: contain; /* stylelint-disable-line plugin/no-unsupported-browser-features */
 
   & > .body {
     display: flex;
     flex-flow: column;
     row-gap: 2rem;
-    padding: 2rem 0;
-    background: #f8f4f1;
+    background: #ffd8e9;
 
-    & > .Card {
+    & > .intro {
+      background-size: cover;
+
+      & > div {
+        position: relative;
+      }
+
+      &.top {
+        height: 35rem;
+        background-position: center;
+        filter: drop-shadow(0 0 0.5rem #443850);
+
+        & > div {
+          top: 28rem;
+        }
+      }
+
+      &.bottom {
+        height: 30rem;
+        background-position: center;
+        filter: drop-shadow(0 0 0.3rem #443850);
+
+        & > div {
+          top: 4rem;
+        }
+      }
+    }
+
+    & > .card {
       display: flex;
       flex-flow: column;
       row-gap: 1rem;
       width: clamp(45%, 70rem, 90%);
       margin: auto;
       padding: 1rem;
+      border: solid 1px #443850;
       border-radius: 12px;
       background: #ffb7c3;
-      box-shadow: 0 0 0 1px #42213d;
 
       & > h2 {
-        margin: 1rem;
-        color: #42213d;
+        margin: 1rem 0;
+        color: #443850;
         font-weight: 400;
-        font-size: 3.5rem;
+        font-size: 3.3rem;
         font-family: Georgia, 'Times New Roman', Times, serif;
         text-align: center;
       }

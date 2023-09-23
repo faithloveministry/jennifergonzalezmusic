@@ -1,10 +1,17 @@
+import imgJ10 from '@/assets/j10.jpg';
+import imgJ6 from '@/assets/j6.jpg';
 import { Footer } from '@/components/Footer';
+import { Follow } from '@/components/IconRow/Follow';
+import { Listen } from '@/components/IconRow/Listen';
 import styles from '@/pages/Home/Home.module.scss';
 
 export const Home = () => (
   <div class={styles.Home}>
     <div class={styles.body}>
-      <div class={styles.Card}>
+      <div class={`${styles.intro} ${styles.top}`} style={{ 'background-image': `url(${imgJ6})` }}>
+        <Listen />
+      </div>
+      <div class={styles.card}>
         <h2>Te Invitamos a Conocernos</h2>
         <div>
           En este site, me conocerás personalmente, de una forma única y transparente, donde encontrarás Espiritualidad
@@ -15,7 +22,7 @@ export const Home = () => (
         </div>
         <button>Learn More</button>
       </div>
-      <div class={styles.Card}>
+      <div class={styles.card}>
         <h2>Sobre Mi</h2>
         <div>
           Jennifer González es una apasionada de la nutrición y el bienestar, una emprendedora multifacética y una
@@ -37,7 +44,7 @@ export const Home = () => (
           mundo de inspiración y transformación en su sitio web!
         </div>
       </div>
-      <div class={styles.Card}>
+      <div class={styles.card}>
         <h2>Trayectoria Musical</h2>
         <div>
           Desde el año 2006 hasta la fecha actual, la trayectoria musical de Jennifer González ha estado marcada por la
@@ -66,7 +73,7 @@ export const Home = () => (
           personas con su mensaje.
         </div>
       </div>
-      <div class={styles.Card}>
+      <div class={styles.card}>
         <h2>Bio</h2>
         <div>
           Jennifer Gonzalez es una cantante nacida un14 de Noviembre en una pequeña ciudad del estado de Oklahoma, en
@@ -99,6 +106,9 @@ export const Home = () => (
           un testimonio de cómo el camino espiritual y profesional pueden converger en un poderoso mensaje de esperanza
           y amor en Cristo.
         </div>
+      </div>
+      <div class={`${styles.intro} ${styles.bottom}`} style={{ 'background-image': `url(${imgJ10})` }}>
+        <Follow />
       </div>
     </div>
     <Footer />

@@ -1,9 +1,17 @@
 .Navbar {
+  z-index: 9;
   display: flex;
-  padding: 1.5rem 2rem;
-  border-bottom: solid 1px #42213d;
+  align-items: center;
+  padding: 0 2rem;
   background: #ffb7c3;
   font-weight: 600;
   font-size: 1.25rem;
+  filter: drop-shadow(0 0 0.7rem #443850);
   column-gap: 1.5rem;
+
+  & > .brand {
+    width: 4.5rem;
+    height: 4.5rem;
+    background-size: cover;
+  }
 }
