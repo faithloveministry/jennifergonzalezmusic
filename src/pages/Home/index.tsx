@@ -1,3 +1,4 @@
+import imgDonate from '@/assets/donate.webp';
 import imgJ10 from '@/assets/j10.jpg';
 import imgJ6 from '@/assets/j6.jpg';
 // import imgJ9 from '@/assets/j9.jpg';
@@ -28,9 +29,7 @@ export const Home = () => (
         <input type="hidden" name="business" value="AT6X4DAVFMNDN" />
         <input type="hidden" name="no_recurring" value="0" />
         <input type="hidden" name="currency_code" value="USD" />
-        <button name="submit" title="PayPal - The safer, easier way to pay online!">
-          Donate with Paypal
-        </button>
+        <input class={styles['btn-donate']} type="image" name="submit" src={imgDonate} alt="Donate" />
       </form>
       Tu donación es una gran bendición para nuestro ministerio musical. ¡Únete a nosotros y apoya nuestra misión!
     </div>
@@ -59,6 +58,15 @@ export const Home = () => (
           mundo de inspiración y transformación en su sitio web!
         </div>
       </div>
+    </div>
+    <div class={styles['card-donate']}>
+      <iframe
+        src="https://www.youtube-nocookie.com/embed/H3r0f3DgJAc?si=Entt5PvZeHw74CJQ"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture;web-share"
+        allowfullscreen
+      />
     </div>
     <div id="trayectoria-musical" class={styles.card}>
       <div>

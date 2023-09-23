@@ -65,31 +65,21 @@
     font-size: 1.1rem;
     text-align: center;
 
+    & > iframe {
+      width: clamp(45%, 50rem, 100%);
+      border-radius: 12px;
+      filter: drop-shadow(0 0 0.5rem #2a1e36);
+      aspect-ratio: 16/9;
+    }
+
     & > form {
       display: flex;
       margin-bottom: 1.7rem;
 
-      & > button {
+      & > .btn-donate {
         width: 100%;
         max-width: 14rem;
         margin: auto;
-        margin-top: 1rem;
-        padding: 0.5rem 1rem;
-        border: 1px solid #443850;
-        border-radius: 12px;
-        background: #ffd447;
-        color: #443850;
-        font-weight: 700;
-        font-size: 1.15rem;
-        cursor: pointer;
-
-        &:hover {
-          outline: 1px solid #443850;
-        }
-
-        &:active {
-          background: #ffd952;
-        }
       }
     }
   }
