@@ -15,7 +15,7 @@
       transition: all 0.3s ease-out;
 
       & > .brand {
-        transform: translateY(-16px);
+        transform: translateY(-14px);
       }
 
       & > a {
@@ -42,7 +42,7 @@
       }
 
       & > button {
-        transform: translateY(-18px) rotate(180deg);
+        transform: translateY(-16px) rotate(180deg);
       }
     }
   }
@@ -55,7 +55,7 @@
     max-height: 100%;
     font-weight: 600;
     font-size: 1.25rem;
-    column-gap: 1.4rem;
+    column-gap: 3%;
 
     & > .brand {
       width: 4.5rem;
@@ -66,6 +66,10 @@
     & > a {
       color: #443850;
       text-decoration: none;
+
+      &:not(:first-child) {
+        transform: translateX(-22px);
+      }
     }
   }
 

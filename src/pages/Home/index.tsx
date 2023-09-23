@@ -37,7 +37,9 @@ export const Home = () => (
           Jennifer ha tenido el privilegio de llevar su música y su mensaje a países como República Dominicana, México,
           Puerto Rico y Estados Unidos, tocando corazones como cantante y oradora.
         </div>
-        <div>Esta noche, te invitamos a descubrir su más reciente producción musical: "La esencia de tu amor".</div>
+        <div>
+          Esta noche, te invitamos a descubrir su más reciente producción musical: <i>"La esencia de tu amor"</i>.
+        </div>
         <div>
           Jennifer González, una verdadera líder en el emprendimiento y el bienestar en Cristo Jesús. ¡Bienvenidos a su
           mundo de inspiración y transformación en su sitio web!
@@ -54,7 +56,7 @@ export const Home = () => (
           En el año 2014, Jennifer González experimentó un importante acontecimiento en su carrera cuando Dios le
           permitió lanzar su primer sencillo titulado "Caminaré". Este evento abrió las puertas para que destacara en el
           ámbito de la música cristiana, compartiendo escenario con reconocidos intérpretes como Mike y Laura Rosario de
-          <i>Revive and Forgiven</i>, Fausto y Camille Mercado, Daniel y Naomi López, Laura Ceballos, Bryan Daniel,
+          <i> Revive and Forgiven</i>, Fausto y Camille Mercado, Daniel y Naomi López, Laura Ceballos, Bryan Daniel,
           Josue Interiano, Jorge De La Torre, Josue Baez y Roger Castillo.
         </div>
         <div>
@@ -73,7 +75,7 @@ export const Home = () => (
         </div>
       </div>
       <div id="bio" class={styles.card}>
-        <h2>Bio</h2>
+        <h2>Biografía</h2>
         <div>
           Jennifer Gonzalez es una cantante nacida un14 de Noviembre en una pequeña ciudad del estado de Oklahoma, en
           los Estados Unidos. Su historia está marcada por la influencia y sacrificio de su madre soltera, quien dejó su

@@ -11,7 +11,7 @@ export const Navbar = () => {
         <a href="#conocernos">Conocernos</a>
         <a href="#sobre-mi">Sobre Mi</a>
         <a href="#trayectoria-musical">Trayectoria Musical</a>
-        <a href="#bio">Bio</a>
+        <a href="#bio">Biografía</a>
       </div>
       <button onClick={() => setHideMenu(p => !p)}>^</button>
     </div>
