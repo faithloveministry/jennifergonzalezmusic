@@ -23,6 +23,17 @@ export const Home = () => (
         </div>
       </div>
     </div>
+    <div id="bio" class={styles['card-donate']}>
+      <form action="https://www.paypal.com/donate" method="post" target="_blank">
+        <input type="hidden" name="business" value="AT6X4DAVFMNDN" />
+        <input type="hidden" name="no_recurring" value="0" />
+        <input type="hidden" name="currency_code" value="USD" />
+        <button name="submit" title="PayPal - The safer, easier way to pay online!">
+          Donate with Paypal
+        </button>
+      </form>
+      Tu donación es una gran bendición para nuestro ministerio musical. ¡Únete a nosotros y apoya nuestra misión!
+    </div>
     <div id="sobre-mi" class={styles.card}>
       <div>
         <h2>Sobre Mi</h2>
@@ -115,17 +126,6 @@ export const Home = () => (
           y amor en Cristo.
         </div>
       </div>
-    </div>
-    <div id="bio" class={styles['card-donate']}>
-      <form action="https://www.paypal.com/donate" method="post" target="_blank">
-        <input type="hidden" name="business" value="AT6X4DAVFMNDN" />
-        <input type="hidden" name="no_recurring" value="0" />
-        <input type="hidden" name="currency_code" value="USD" />
-        <button name="submit" title="PayPal - The safer, easier way to pay online!">
-          Donate with Paypal
-        </button>
-      </form>
-      Tu donación es una gran bendición para nuestro ministerio musical. ¡Únete a nosotros y apoya nuestra misión!
     </div>
     <div class={`${styles.intro} ${styles.bottom}`} style={{ 'background-image': `url(${imgJ10})` }}>
       <Follow />
