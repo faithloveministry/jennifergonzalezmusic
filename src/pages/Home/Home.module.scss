@@ -1,55 +1,51 @@
 .Home {
   overflow: hidden auto;
   height: 100%;
-  background: linear-gradient(#ffd8e9 0 50%, #ffb7c3 50% 100%);
+  background: linear-gradient(#443850 0 50%, #ffb7c3 50% 100%);
   color: #2a1e36;
   scroll-behavior: smooth; /* stylelint-disable-line plugin/no-unsupported-browser-features */
   overscroll-behavior: contain; /* stylelint-disable-line plugin/no-unsupported-browser-features */
 
-  & > .body {
-    display: flex;
-    flex-flow: column;
-    row-gap: 2rem;
-    background: #ffd8e9;
+  & > .intro {
+    background-size: cover;
 
-    & > .intro {
-      background-size: cover;
+    & > div {
+      position: relative;
+    }
+
+    &.top {
+      height: 35rem;
+      background-position: center;
+      filter: drop-shadow(0 0 0.5rem #443850);
 
       & > div {
-        position: relative;
-      }
-
-      &.top {
-        height: 35rem;
-        background-position: center;
-        filter: drop-shadow(0 0 0.5rem #443850);
-
-        & > div {
-          top: 28rem;
-        }
-      }
-
-      &.bottom {
-        height: 30rem;
-        background-position: center;
-        filter: drop-shadow(0 0 0.3rem #443850);
-
-        & > div {
-          top: 4rem;
-        }
+        top: 28rem;
       }
     }
 
-    & > .card {
+    &.bottom {
+      height: 30rem;
+      background-position: center;
+      filter: drop-shadow(0 0 0.3rem #443850);
+
+      & > div {
+        top: 4rem;
+      }
+    }
+  }
+
+  & > .card {
+    border: solid 1px #443850;
+    background: #ffb7c3;
+
+    & > div {
       display: flex;
       flex-flow: column;
       row-gap: 1rem;
-      width: clamp(45%, 70rem, 90%);
+      width: clamp(45%, 70rem, 100%);
       margin: auto;
-      padding: 1rem;
-      border: solid 1px #443850;
-      border-radius: 12px;
-      background: #ffb7c3;
+      padding: 2rem;
+      font-size: 1.1rem;
 
       & > h2 {
         margin: 1rem 0;
@@ -59,24 +55,42 @@
         font-family: Georgia, 'Times New Roman', Times, serif;
         text-align: center;
       }
-
-      & > div {
-        font-size: 1.1rem;
-      }
     }
   }
 
-  button {
-    width: 100%;
-    max-width: 14rem;
-    margin: auto;
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 12px;
-    background: #42213d;
-    color: white;
-    font-size: 1.15rem;
-    cursor: pointer;
+  & > .card-donate {
+    padding: 2rem 0;
+    background: #443850;
+    color: #fff;
+    font-size: 1.1rem;
+    text-align: center;
+
+    & > form {
+      display: flex;
+      margin-bottom: 1.7rem;
+
+      & > button {
+        width: 100%;
+        max-width: 14rem;
+        margin: auto;
+        margin-top: 1rem;
+        padding: 0.5rem 1rem;
+        border: 1px solid #443850;
+        border-radius: 12px;
+        background: #ffd447;
+        color: #443850;
+        font-weight: 700;
+        font-size: 1.15rem;
+        cursor: pointer;
+
+        &:hover {
+          outline: 1px solid #443850;
+        }
+
+        &:active {
+          background: #ffd952;
+        }
+      }
+    }
   }
 }

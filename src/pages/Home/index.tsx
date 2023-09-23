@@ -1,5 +1,6 @@
 import imgJ10 from '@/assets/j10.jpg';
 import imgJ6 from '@/assets/j6.jpg';
+// import imgJ9 from '@/assets/j9.jpg';
 import { Footer } from '@/components/Footer';
 import { Follow } from '@/components/IconRow/Follow';
 import { Listen } from '@/components/IconRow/Listen';
@@ -7,11 +8,11 @@ import styles from '@/pages/Home/Home.module.scss';
 
 export const Home = () => (
   <div class={styles.Home}>
-    <div class={styles.body}>
-      <div id="top" class={`${styles.intro} ${styles.top}`} style={{ 'background-image': `url(${imgJ6})` }}>
-        <Listen />
-      </div>
-      <div id="conocernos" class={styles.card}>
+    <div id="top" class={`${styles.intro} ${styles.top}`} style={{ 'background-image': `url(${imgJ6})` }}>
+      <Listen />
+    </div>
+    <div id="conocernos" class={styles.card}>
+      <div>
         <h2>Te Invitamos a Conocernos</h2>
         <div>
           En este site, me conocerás personalmente, de una forma única y transparente, donde encontrarás Espiritualidad
@@ -21,7 +22,9 @@ export const Home = () => (
           productos para tu hogar tu vida personal y salud y bienestar.
         </div>
       </div>
-      <div id="sobre-mi" class={styles.card}>
+    </div>
+    <div id="sobre-mi" class={styles.card}>
+      <div>
         <h2>Sobre Mi</h2>
         <div>
           Jennifer González es una apasionada de la nutrición y el bienestar, una emprendedora multifacética y una
@@ -45,7 +48,9 @@ export const Home = () => (
           mundo de inspiración y transformación en su sitio web!
         </div>
       </div>
-      <div id="trayectoria-musical" class={styles.card}>
+    </div>
+    <div id="trayectoria-musical" class={styles.card}>
+      <div>
         <h2>Trayectoria Musical</h2>
         <div>
           Desde el año 2006 hasta la fecha actual, la trayectoria musical de Jennifer González ha estado marcada por la
@@ -74,7 +79,9 @@ export const Home = () => (
           personas con su mensaje.
         </div>
       </div>
-      <div id="bio" class={styles.card}>
+    </div>
+    <div id="bio" class={styles.card}>
+      <div>
         <h2>Biografía</h2>
         <div>
           Jennifer Gonzalez es una cantante nacida un14 de Noviembre en una pequeña ciudad del estado de Oklahoma, en
@@ -108,9 +115,20 @@ export const Home = () => (
           y amor en Cristo.
         </div>
       </div>
-      <div class={`${styles.intro} ${styles.bottom}`} style={{ 'background-image': `url(${imgJ10})` }}>
-        <Follow />
-      </div>
+    </div>
+    <div id="bio" class={styles['card-donate']}>
+      <form action="https://www.paypal.com/donate" method="post" target="_blank">
+        <input type="hidden" name="business" value="AT6X4DAVFMNDN" />
+        <input type="hidden" name="no_recurring" value="0" />
+        <input type="hidden" name="currency_code" value="USD" />
+        <button name="submit" title="PayPal - The safer, easier way to pay online!">
+          Donate with Paypal
+        </button>
+      </form>
+      Tu donación es una gran bendición para nuestro ministerio musical. ¡Únete a nosotros y apoya nuestra misión!
+    </div>
+    <div class={`${styles.intro} ${styles.bottom}`} style={{ 'background-image': `url(${imgJ10})` }}>
+      <Follow />
     </div>
     <Footer />
   </div>
