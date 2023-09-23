@@ -1,14 +1,6 @@
 /* @refresh reload */
 
-import { Router } from '@solidjs/router';
 import { render } from 'solid-js/web';
 import { App } from '@/App';
 
-render(
-  () => (
-    <Router>
-      <App />
-    </Router>
-  ),
-  document.querySelector('body')!
-);
+render(() => <App />, document.querySelector('body')!);

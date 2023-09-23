@@ -1,17 +1,85 @@
 .Navbar {
   z-index: 9;
   display: flex;
-  align-items: center;
-  padding: 0 2rem;
+  flex-flow: column;
+  padding: 0 clamp(0.43rem, 1.7vw, 2rem);
   background: #ffb7c3;
-  font-weight: 600;
-  font-size: 1.25rem;
   filter: drop-shadow(0 0 0.7rem #443850);
-  column-gap: 1.5rem;
 
-  & > .brand {
-    width: 4.5rem;
-    height: 4.5rem;
-    background-size: cover;
+  @media screen and (max-width: 600px) {
+    padding: 0;
+
+    & .links {
+      flex-flow: column;
+      padding-bottom: 0.7rem;
+      transition: all 0.3s ease-out;
+
+      & > .brand {
+        transform: translateY(-16px);
+      }
+
+      & > a {
+        width: max(14rem, 70vw);
+        font-weight: 800;
+
+        &:first-child {
+          flex-shrink: 0;
+        }
+
+        &:not(:first-child) {
+          height: 1.75rem;
+        }
+      }
+    }
+
+    & > button {
+      display: block !important;
+    }
+
+    &.hidden {
+      & > .links {
+        max-height: 3.5rem;
+      }
+
+      & > button {
+        transform: translateY(-18px) rotate(180deg);
+      }
+    }
+  }
+
+  & > .links {
+    display: flex;
+    row-gap: 0.5rem;
+    align-items: center;
+    overflow: hidden;
+    max-height: 100%;
+    font-weight: 600;
+    font-size: 1.25rem;
+    column-gap: 1.4rem;
+
+    & > .brand {
+      width: 4.5rem;
+      height: 4.5rem;
+      background-size: cover;
+    }
+
+    & > a {
+      color: #443850;
+      text-decoration: none;
+    }
+  }
+
+  & > button {
+    display: none;
+    border: none;
+    background: none;
+    color: #443850;
+    font-weight: 900;
+    font-size: 3rem;
+    font-family: Courier, monospace;
+    line-height: 1.8rem;
+    user-select: none;
+    transition: transform 0.3s ease-out;
+    transform: translateY(0) rotate(0);
   }
 }

@@ -8,10 +8,10 @@ import styles from '@/pages/Home/Home.module.scss';
 export const Home = () => (
   <div class={styles.Home}>
     <div class={styles.body}>
-      <div class={`${styles.intro} ${styles.top}`} style={{ 'background-image': `url(${imgJ6})` }}>
+      <div id="top" class={`${styles.intro} ${styles.top}`} style={{ 'background-image': `url(${imgJ6})` }}>
         <Listen />
       </div>
-      <div class={styles.card}>
+      <div id="conocernos" class={styles.card}>
         <h2>Te Invitamos a Conocernos</h2>
         <div>
           En este site, me conocerás personalmente, de una forma única y transparente, donde encontrarás Espiritualidad
@@ -20,9 +20,8 @@ export const Home = () => (
           Emprendedora en Nuestra Tienda Online de Modesty Love Design & Products donde encontraras un sin fin de
           productos para tu hogar tu vida personal y salud y bienestar.
         </div>
-        <button>Learn More</button>
       </div>
-      <div class={styles.card}>
+      <div id="sobre-mi" class={styles.card}>
         <h2>Sobre Mi</h2>
         <div>
           Jennifer González es una apasionada de la nutrición y el bienestar, una emprendedora multifacética y una
@@ -44,7 +43,7 @@ export const Home = () => (
           mundo de inspiración y transformación en su sitio web!
         </div>
       </div>
-      <div class={styles.card}>
+      <div id="trayectoria-musical" class={styles.card}>
         <h2>Trayectoria Musical</h2>
         <div>
           Desde el año 2006 hasta la fecha actual, la trayectoria musical de Jennifer González ha estado marcada por la
@@ -73,7 +72,7 @@ export const Home = () => (
           personas con su mensaje.
         </div>
       </div>
-      <div class={styles.card}>
+      <div id="bio" class={styles.card}>
         <h2>Bio</h2>
         <div>
           Jennifer Gonzalez es una cantante nacida un14 de Noviembre en una pequeña ciudad del estado de Oklahoma, en
