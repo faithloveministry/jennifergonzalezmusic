@@ -183,7 +183,7 @@ export const Listen = () => (
       </svg>
     </a>
     <a href="https://www.pandora.com/artist/jennifer-gonzalez/ARbgpwmz6kpPdP9">
-      <img src={imgPandoraLogo} />
+      <img src={imgPandoraLogo} alt="Pandora" />
     </a>
   </div>
 );
