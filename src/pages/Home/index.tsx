@@ -24,7 +24,7 @@ export const Home = () => (
         </div>
       </div>
     </div>
-    <div id="bio" class={styles['card-donate']}>
+    <div class={styles['card-donate']}>
       <form action="https://www.paypal.com/donate" method="post" target="_blank">
         <input type="hidden" name="business" value="AT6X4DAVFMNDN" />
         <input type="hidden" name="no_recurring" value="0" />
