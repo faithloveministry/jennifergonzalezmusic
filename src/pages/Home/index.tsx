@@ -50,9 +50,7 @@ export const Home = () => (
           Jennifer ha tenido el privilegio de llevar su música y su mensaje a países como República Dominicana, México,
           Puerto Rico y Estados Unidos, tocando corazones como cantante y oradora.
         </div>
-        <div>
-          Esta noche, te invitamos a descubrir su más reciente producción musical: <i>"La esencia de tu amor"</i>.
-        </div>
+        <div>Te invitamos a descubrir su más reciente producción musical: "La Esencia de Tu Amor".</div>
         <div>
           Jennifer González, una verdadera líder en el emprendimiento y el bienestar en Cristo Jesús. ¡Bienvenidos a su
           mundo de inspiración y transformación en su sitio web!
@@ -86,9 +84,9 @@ export const Home = () => (
         <div>
           En junio de 2016, su trayectoria musical dio un paso más allá al llevarla a ministrar internacionalmente en la
           República Dominicana como invitada del Ministerio Gospel Wave Ministry. Durante esta experiencia, tuvo el
-          privilegio de participar junto a destacados artistas de la música cristiana como Jamagra, Haboner Hilton y el
-          Grupo Elegidos. Además, durante su participación en la ciudad de Moca, República Dominicana, Jennifer tuvo la
-          oportunidad de predicar en una pequeña Iglesia Adventista llamada "La Iglesia de la Fe".
+          privilegio de participar junto a destacados artistas de la música cristiana como Jamayra Nuñez, Habner Hilton
+          y el Grupo Elegidos. Además, durante su participación en la ciudad de Moca, República Dominicana, Jennifer
+          tuvo la oportunidad de predicar en una pequeña Iglesia Adventista llamada "La Iglesia de la Fe".
         </div>
         <div>
           Desde aquel momento hasta la fecha actual, la vida y carrera de Jennifer González han seguido siendo guiadas
@@ -103,7 +101,7 @@ export const Home = () => (
       <div>
         <h2>Biografía</h2>
         <div>
-          Jennifer Gonzalez es una cantante nacida un14 de Noviembre en una pequeña ciudad del estado de Oklahoma, en
+          Jennifer Gonzalez es una cantante nacida un 14 de Noviembre en una pequeña ciudad del estado de Oklahoma, en
           los Estados Unidos. Su historia está marcada por la influencia y sacrificio de su madre soltera, quien dejó su
           Ciudad de México natal en busca de un mejor futuro en Estados Unidos. La familia finalmente se estableció en
           el Estado de Texas. A pesar de los desafíos que enfrentaron, la vida de Jennifer estuvo siempre bajo el amparo
@@ -117,11 +115,11 @@ export const Home = () => (
           testimonio en Cristo Jesús, convirtiéndola en un ejemplo viviente de fe y amor.
         </div>
         <div>
-          El propósito de Jennifer se definió a medida que Dios la guió para conocer el Evangelio y desarrollar los
+          El propósito de Jennifer se definió a medida que Dios la guió para conocer el evangelio y desarrollar los
           dones que le otorgó. Además de su talento como cantante, también es una hábil cantautora y escritora. Su
           música, letras y escritos están impregnados de su profundo vínculo con la espiritualidad y su relación con
           Dios. Cada canción es una expresión sincera de su fe y amor por Cristo, y su escritura refleja su deseo de
-          compartir el mensaje del Evangelio con el mundo.
+          compartir el mensaje del evangelio con el mundo.
         </div>
         <div>
           Jennifer González no solo se limita a expresarse a través de su música y escritura, sino que también se dedica
