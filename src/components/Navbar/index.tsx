@@ -7,7 +7,7 @@ export const Navbar = () => {
   return (
     <div class={`${styles.Navbar} ${hideMenu() ? styles.hidden : ''}`}>
       <div class={styles.links}>
-        <a href="#top" class={styles.brand} style={{ 'background-image': `url("icon192.png")` }} />
+        <a href="#top" class={styles.brand} style={{ 'background-image': `url("/icon192.png")` }} />
         <a href="#conocernos">Conocernos</a>
         <a href="#sobre-mi">Sobre Mi</a>
         <a href="#trayectoria-musical">Trayectoria Musical</a>
