@@ -28,8 +28,8 @@ export const Listen = () => (
     <a href="https://music.youtube.com/channel/UCHoLHYGlKpL-TeNTejVlzgQ">
       <svg viewBox="0 0 176 176">
         <circle cx="88" cy="88" r="88" fill="red" />
-        <path fill="#FFF" d="M88 46a42 42 0 1 1 0 84 42 42 0 0 1 0-84m0-4a46 46 0 1 0 0 92 46 46 0 0 0 0-92z" />
-        <path fill="#FFF" d="m72 111 39-24-39-22z" />
+        <path fill="#fff" d="M88 46a42 42 0 1 1 0 84 42 42 0 0 1 0-84m0-4a46 46 0 1 0 0 92 46 46 0 0 0 0-92z" />
+        <path fill="#fff" d="m72 111 39-24-39-22z" />
       </svg>
     </a>
     <a href="https://music.amazon.com/artists/B0171RLIKU/jennifer-gonzalez">

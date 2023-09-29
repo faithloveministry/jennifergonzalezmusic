@@ -64,7 +64,7 @@ export const Follow = () => (
     </a>
     <a href="https://www.youtube.com/@JenniferGonzalezMusic">
       <svg viewBox="0 0 461 461">
-        <rect x="160" y="160" width="160" height="160" fill="white" />
+        <rect x="160" y="160" width="160" height="160" fill="#fff" />
         <path
           fill="#f61c0d"
           d="M365 67H96c-53 0-96 43-96 96v135c0 53 43 96 96 96h269c53 0 96-43 96-96V163c0-53-43-96-96-96zm-64 170-127 60c-3 2-7-1-7-4V169c0-4 4-7 8-5l126 64c3 2 3 7 0 9z"
