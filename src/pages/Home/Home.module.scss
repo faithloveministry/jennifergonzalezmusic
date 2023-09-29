@@ -68,6 +68,7 @@
     & > iframe {
       width: 45rem;
       max-width: 100%;
+      border: none;
       // height: min(calc(56.25vw - 1.125rem), 25.3125rem); // Replace aspect-ratio with this to support iOS <15
       border-radius: 12px;
       filter: drop-shadow(0 0 0.5rem #2a1e36);
