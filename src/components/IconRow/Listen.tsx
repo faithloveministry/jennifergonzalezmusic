@@ -1,4 +1,4 @@
-import imgPandoraLogo from '@/assets/pandora-logo.webp';
+// import imgPandoraLogo from '@/assets/pandora-logo.webp';
 import styles from '@/components/IconRow/IconRow.module.scss';
 
 export const Listen = () => (
@@ -46,8 +46,6 @@ export const Listen = () => (
           >
             <stop offset="0" stop-color="#fb5c74" />
             <stop offset=".3" stop-color="#ffb7c3" />
-            <stop offset=".9" stop-color="#ffb7c3" />
-            <stop offset="1" stop-color="#ffb7c3" />
           </linearGradient>
           <path
             fill="url(#i)"
@@ -64,8 +62,6 @@ export const Listen = () => (
           >
             <stop offset="0" stop-color="#fb5c74" />
             <stop offset=".3" stop-color="#ffb7c3" />
-            <stop offset=".9" stop-color="#ffb7c3" />
-            <stop offset="1" stop-color="#ffb7c3" />
           </linearGradient>
           <path
             fill="url(#b)"
@@ -82,8 +78,6 @@ export const Listen = () => (
           >
             <stop offset="0" stop-color="#fb5c74" />
             <stop offset=".3" stop-color="#ffb7c3" />
-            <stop offset=".9" stop-color="#ffb7c3" />
-            <stop offset="1" stop-color="#ffb7c3" />
           </linearGradient>
           <path
             fill="url(#c)"
@@ -101,7 +95,6 @@ export const Listen = () => (
             <stop offset="0" stop-color="#fb5c74" />
             <stop offset=".3" stop-color="#fb5c74" />
             <stop offset=".9" stop-color="#ffb7c3" />
-            <stop offset="1" stop-color="#ffb7c3" />
           </linearGradient>
           <path
             fill="url(#d)"
@@ -118,8 +111,6 @@ export const Listen = () => (
           >
             <stop offset="0" stop-color="#fb5c74" />
             <stop offset=".3" stop-color="#ffb7c3" />
-            <stop offset=".9" stop-color="#ffb7c3" />
-            <stop offset="1" stop-color="#ffb7c3" />
           </linearGradient>
           <path
             fill="url(#e)"
@@ -136,8 +127,6 @@ export const Listen = () => (
           >
             <stop offset="0" stop-color="#fb5c74" />
             <stop offset=".3" stop-color="#ffb7c3" />
-            <stop offset=".9" stop-color="#ffb7c3" />
-            <stop offset="1" stop-color="#ffb7c3" />
           </linearGradient>
           <path
             fill="url(#f)"
@@ -154,8 +143,6 @@ export const Listen = () => (
           >
             <stop offset="0" stop-color="#fb5c74" />
             <stop offset=".3" stop-color="#ffb7c3" />
-            <stop offset=".9" stop-color="#ffb7c3" />
-            <stop offset="1" stop-color="#ffb7c3" />
           </linearGradient>
           <path
             fill="url(#g)"
@@ -172,8 +159,6 @@ export const Listen = () => (
           >
             <stop offset="0" stop-color="#fb5c74" />
             <stop offset=".3" stop-color="#ffb7c3" />
-            <stop offset=".9" stop-color="#ffb7c3" />
-            <stop offset="1" stop-color="#ffb7c3" />
           </linearGradient>
           <path
             fill="url(#h)"
