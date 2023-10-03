@@ -7,7 +7,7 @@ export const Navbar = () => {
   return (
     <div class={`${styles.Navbar} ${hideMenu() ? styles.hidden : ''}`}>
       <div class={styles.links}>
-        <a href="#top" class={styles.brand}>
+        <a href="#top" class={styles.brand} aria-label="Return to Top">
           Jennifer Gonzalez
         </a>
         <a href="#conocernos">Inicio</a>
