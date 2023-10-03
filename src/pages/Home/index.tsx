@@ -97,6 +97,15 @@ export const Home = () => (
         </div>
       </div>
     </div>
+    <div class={styles['card-donate']}>
+      <iframe
+        src="https://www.youtube-nocookie.com/embed/H3r0f3DgJAc?si=Entt5PvZeHw74CJQ"
+        title="La Bondad de Dios Music Video on Youtube"
+        allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture;web-share"
+        allowfullscreen
+        loading="lazy"
+      />
+    </div>
     <div id="bio" class={styles.card}>
       <div>
         <h2>Biografía</h2>
