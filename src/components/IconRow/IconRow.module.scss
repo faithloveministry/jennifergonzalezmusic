@@ -3,7 +3,7 @@
   justify-content: space-evenly;
   width: 100%;
   margin: auto;
-  padding: 0.2rem 0;
+  padding: 0.3rem 0;
   border: #443850 solid 1px;
   background: #44385070;
   filter: drop-shadow(0 0 0.75rem #443850);
@@ -14,16 +14,42 @@
 
     & > svg,
     & > img {
-      height: 2rem;
-      filter: drop-shadow(0 0 0.3rem #443850);
+      height: 2.2rem;
+      filter: drop-shadow(0 0 0.2rem #443850);
+      fill: #ffb7c3;
+      transition: all 0.2s ease-out;
 
       @media screen and (max-width: 600px) {
-        height: 1.5rem;
+        height: 1.75rem;
+      }
+
+      & > path {
+        fill: #fff;
+      }
+
+      & > rect,
+      & > circle {
+        fill: none;
+        stroke: #fff;
       }
     }
 
     &:hover {
       transform: scale(1.05);
+
+      & > svg {
+        filter: drop-shadow(0 0 0.7rem #443850);
+        fill: #fff;
+
+        & > path {
+          fill: #ffb7c3;
+        }
+
+        & > rect,
+        & > circle {
+          stroke: #ffb7c3;
+        }
+      }
     }
   }
 }
