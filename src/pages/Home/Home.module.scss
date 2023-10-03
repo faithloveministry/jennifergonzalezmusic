@@ -19,18 +19,14 @@
       filter: drop-shadow(0 0 0.5rem #443850);
 
       & > div {
-        top: 28rem;
+        top: 32.3rem;
       }
     }
 
     &.bottom {
-      height: 30rem;
+      height: 25rem;
       background-position: center;
       filter: drop-shadow(0 0 0.3rem #443850);
-
-      & > div {
-        top: 4rem;
-      }
     }
   }
 

@@ -5,14 +5,14 @@ export const Listen = () => (
   <div class={styles.IconRow}>
     <a href="https://open.spotify.com/artist/6wsnBNKBlKHCNtLXeuDhXy">
       <svg viewBox="0 0 496 512">
-        <path fill="#1ed760" d="M248 8a248 248 0 1 0 .2 496A248 248 0 0 0 248 8Z" />
+        <path fill="#ffb7c3" d="M248 8a248 248 0 1 0 .2 496A248 248 0 0 0 248 8Z" />
         <path d="M407 231a23 23 0 0 1-13-4c-71-43-199-53-281-30-4 1-8 3-13 3a23 23 0 0 1-23-24c0-14 8-21 17-24a419 419 0 0 1 118-15c73 0 150 15 205 48a24 24 0 0 1 13 23c0 14-11 23-23 23zm-31 76c-5 0-9-2-12-4-63-37-156-52-239-30-5 1-7 3-12 3-11 0-19-9-19-19s5-18 16-21a336 336 0 0 1 98-14c65 0 128 16 177 45 8 5 11 11 11 20a19 19 0 0 1-19 20zm-27 66c-4 0-7-1-11-4-62-38-135-39-207-25-4 1-9 3-12 3-10 0-16-8-16-16 0-10 6-15 14-17 82-18 166-17 237 26 6 4 10 7 10 16.9s-7 15.4-15 16z" />
       </svg>
     </a>
     <a href="https://music.apple.com/us/artist/jennifer-gonzalez/708294552">
       <svg viewBox="0 0 361 361">
         <linearGradient id="a" x1="180" x2="180" y1="359" y2="8" gradientUnits="userSpaceOnUse">
-          <stop offset="0" stop-color="#fa233b" />
+          <stop offset="0" stop-color="#ffb7c3" />
           <stop offset="1" stop-color="#fb5c74" />
         </linearGradient>
         <path
@@ -20,16 +20,16 @@ export const Listen = () => (
           d="M360 113V100c0-4 0-7-0-11-0-8-1-16-2-24a76 76 0 0 0-63-63C287 1 279 1 271.1.3L260 0H100c-4 0-7 0-10.8.2-8 0-15.9.7-24 2a76 76 0 0 0-63 63C1 73 1 81 0 89L0 100v148A2774 2774 0 0 0 0 271c0 8 1 16 2 24a76 76 0 0 0 63 63c8 1 16 2 24 2l11 0h160c4 0 7 0 11-0 8-0 16-1 24-2a76 76 0 0 0 63-63 171 171 0 0 0 2-24l0-11V113z"
         />
         <path
-          fill="#fff"
+          fill="#000"
           d="M255 55c-1 0-9 1-10 2L138 78a15 15 0 0 0-7 3c-2 2-3 4-4 7-.1.6-0 2-0 4v134c0 3-0 6-2 9-2 3-5 3-8 4l-7 1a122 122 0 0 0-20 5 28 28 0 0 0-19 30 28 28 0 0 0 22 25c5 1 11 1 19-1a40 40 0 0 0 13-5 31 31 0 0 0 15-22 62 62 0 0 0 1-13V143c0-6 2-8 7-9l93-19c6-1 8.6.5 9 7v79c0 3 0 6-2 9-2 3-5 3-8 4l-7 1a122 122 0 0 0-20 5 28 28 0 0 0-19 30 28 28 0 0 0 22 24c5 1 11 1 19-1a39 39 0 0 0 13-5 31 31 0 0 0 15-22c1-5 1-9 1-13V65c0-6-3-10-9-10z"
         />
       </svg>
     </a>
     <a href="https://music.youtube.com/channel/UCHoLHYGlKpL-TeNTejVlzgQ">
       <svg viewBox="0 0 176 176">
-        <circle cx="88" cy="88" r="88" fill="red" />
-        <path fill="#fff" d="M88 46a42 42 0 1 1 0 84 42 42 0 0 1 0-84m0-4a46 46 0 1 0 0 92 46 46 0 0 0 0-92z" />
-        <path fill="#fff" d="m72 111 39-24-39-22z" />
+        <circle cx="88" cy="88" r="88" fill="#ffb7c3" />
+        <path fill="#000" d="M88 46a42 42 0 1 1 0 84 42 42 0 0 1 0-84m0-4a46 46 0 1 0 0 92 46 46 0 0 0 0-92z" />
+        <path fill="#000" d="m72 111 39-24-39-22z" />
       </svg>
     </a>
     <a href="https://music.amazon.com/artists/B0171RLIKU/jennifer-gonzalez">
@@ -44,10 +44,10 @@ export const Listen = () => (
             gradientTransform="matrix(91 -91 -91 -91 64008.5 390.5)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0" stop-color="#0c6cb3" />
-            <stop offset=".3" stop-color="#1e84c4" />
-            <stop offset=".9" stop-color="#4cc0ef" />
-            <stop offset="1" stop-color="#4cc0ef" />
+            <stop offset="0" stop-color="#fb5c74" />
+            <stop offset=".3" stop-color="#ffb7c3" />
+            <stop offset=".9" stop-color="#ffb7c3" />
+            <stop offset="1" stop-color="#ffb7c3" />
           </linearGradient>
           <path
             fill="url(#i)"
@@ -62,10 +62,10 @@ export const Listen = () => (
             gradientTransform="matrix(91 -91 -91 -91 64008.5 390.5)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0" stop-color="#0c6cb3" />
-            <stop offset=".3" stop-color="#1e84c4" />
-            <stop offset=".9" stop-color="#4cc0ef" />
-            <stop offset="1" stop-color="#4cc0ef" />
+            <stop offset="0" stop-color="#fb5c74" />
+            <stop offset=".3" stop-color="#ffb7c3" />
+            <stop offset=".9" stop-color="#ffb7c3" />
+            <stop offset="1" stop-color="#ffb7c3" />
           </linearGradient>
           <path
             fill="url(#b)"
@@ -80,10 +80,10 @@ export const Listen = () => (
             gradientTransform="matrix(91 -91 -91 -91 64008.5 390.5)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0" stop-color="#0c6cb3" />
-            <stop offset=".3" stop-color="#1e84c4" />
-            <stop offset=".9" stop-color="#4cc0ef" />
-            <stop offset="1" stop-color="#4cc0ef" />
+            <stop offset="0" stop-color="#fb5c74" />
+            <stop offset=".3" stop-color="#ffb7c3" />
+            <stop offset=".9" stop-color="#ffb7c3" />
+            <stop offset="1" stop-color="#ffb7c3" />
           </linearGradient>
           <path
             fill="url(#c)"
@@ -98,10 +98,10 @@ export const Listen = () => (
             gradientTransform="matrix(91 -91 -91 -91 64008.5 390.5)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0" stop-color="#0c6cb3" />
-            <stop offset=".3" stop-color="#1e84c4" />
-            <stop offset=".9" stop-color="#4cc0ef" />
-            <stop offset="1" stop-color="#4cc0ef" />
+            <stop offset="0" stop-color="#fb5c74" />
+            <stop offset=".3" stop-color="#fb5c74" />
+            <stop offset=".9" stop-color="#ffb7c3" />
+            <stop offset="1" stop-color="#ffb7c3" />
           </linearGradient>
           <path
             fill="url(#d)"
@@ -116,10 +116,10 @@ export const Listen = () => (
             gradientTransform="matrix(91 -91 -91 -91 64008.5 390.5)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0" stop-color="#0c6cb3" />
-            <stop offset=".3" stop-color="#1e84c4" />
-            <stop offset=".9" stop-color="#4cc0ef" />
-            <stop offset="1" stop-color="#4cc0ef" />
+            <stop offset="0" stop-color="#fb5c74" />
+            <stop offset=".3" stop-color="#ffb7c3" />
+            <stop offset=".9" stop-color="#ffb7c3" />
+            <stop offset="1" stop-color="#ffb7c3" />
           </linearGradient>
           <path
             fill="url(#e)"
@@ -134,10 +134,10 @@ export const Listen = () => (
             gradientTransform="matrix(91 -91 -91 -91 64008.5 390.5)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0" stop-color="#0c6cb3" />
-            <stop offset=".3" stop-color="#1e84c4" />
-            <stop offset=".9" stop-color="#4cc0ef" />
-            <stop offset="1" stop-color="#4cc0ef" />
+            <stop offset="0" stop-color="#fb5c74" />
+            <stop offset=".3" stop-color="#ffb7c3" />
+            <stop offset=".9" stop-color="#ffb7c3" />
+            <stop offset="1" stop-color="#ffb7c3" />
           </linearGradient>
           <path
             fill="url(#f)"
@@ -152,10 +152,10 @@ export const Listen = () => (
             gradientTransform="matrix(91 -91 -91 -91 64008.5 390.5)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0" stop-color="#0c6cb3" />
-            <stop offset=".3" stop-color="#1e84c4" />
-            <stop offset=".9" stop-color="#4cc0ef" />
-            <stop offset="1" stop-color="#4cc0ef" />
+            <stop offset="0" stop-color="#fb5c74" />
+            <stop offset=".3" stop-color="#ffb7c3" />
+            <stop offset=".9" stop-color="#ffb7c3" />
+            <stop offset="1" stop-color="#ffb7c3" />
           </linearGradient>
           <path
             fill="url(#g)"
@@ -170,10 +170,10 @@ export const Listen = () => (
             gradientTransform="matrix(91 -91 -91 -91 64008.5 390.5)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0" stop-color="#0c6cb3" />
-            <stop offset=".3" stop-color="#1e84c4" />
-            <stop offset=".9" stop-color="#4cc0ef" />
-            <stop offset="1" stop-color="#4cc0ef" />
+            <stop offset="0" stop-color="#fb5c74" />
+            <stop offset=".3" stop-color="#ffb7c3" />
+            <stop offset=".9" stop-color="#ffb7c3" />
+            <stop offset="1" stop-color="#ffb7c3" />
           </linearGradient>
           <path
             fill="url(#h)"
@@ -182,8 +182,8 @@ export const Listen = () => (
         </g>
       </svg>
     </a>
-    <a href="https://www.pandora.com/artist/jennifer-gonzalez/ARbgpwmz6kpPdP9">
+    {/* <a href="https://www.pandora.com/artist/jennifer-gonzalez/ARbgpwmz6kpPdP9">
       <img src={imgPandoraLogo} alt="Pandora" />
-    </a>
+    </a> */}
   </div>
 );

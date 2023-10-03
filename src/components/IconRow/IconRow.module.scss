@@ -3,23 +3,22 @@
   justify-content: space-evenly;
   width: 100%;
   margin: auto;
-  padding: 0.8rem 0;
+  padding: 0.2rem 0;
   border: #443850 solid 1px;
   background: #44385070;
   filter: drop-shadow(0 0 0.75rem #443850);
   transform: scale(1);
-  backdrop-filter: blur(10px);
 
   & > a {
     transition: transform 0.1s ease-in-out;
 
     & > svg,
     & > img {
-      height: 3.4rem;
+      height: 2rem;
       filter: drop-shadow(0 0 0.3rem #443850);
 
       @media screen and (max-width: 600px) {
-        height: 2.5rem;
+        height: 1.5.5rem;
       }
     }
 
