@@ -6,6 +6,47 @@
   background: #ffb7c3;
   filter: drop-shadow(0 0 0.7rem #443850);
 
+  & > .links {
+    display: flex;
+    row-gap: 0.5rem;
+    align-items: center;
+    overflow: hidden;
+    max-height: 100%;
+    font-weight: 600;
+    font-size: 1.25rem;
+    column-gap: 3%;
+
+    & > .brand {
+      display: flex;
+      flex-shrink: 0;
+      align-items: center;
+      width: 10rem;
+      height: 4.5rem;
+      background-size: cover;
+      font-family: 'Allexis', serif;
+    }
+
+    & > a {
+      color: #443850;
+      text-decoration: none;
+    }
+  }
+
+  & > button {
+    display: none;
+    border: none;
+    background: none;
+    color: #443850;
+    font-weight: 900;
+    font-size: 3rem;
+    font-family: Courier, monospace;
+    line-height: 1.8rem;
+    user-select: none;
+    transition: transform 0.3s ease-out;
+    transform: translateY(0) rotate(0);
+  }
+
+  /* stylelint-disable-next-line order/order */
   @media screen and (max-width: 600px) {
     padding: 0;
 
@@ -15,6 +56,9 @@
       transition: all 0.3s ease-out;
 
       & > .brand {
+        width: 4.5rem;
+        background-image: url('/icon192.png');
+        color: #00000000;
         transform: translateY(-14px);
       }
 
@@ -33,7 +77,7 @@
     }
 
     & > button {
-      display: block !important;
+      display: block;
     }
 
     &.hidden {
@@ -45,45 +89,5 @@
         transform: translateY(-16px) rotate(180deg);
       }
     }
-  }
-
-  & > .links {
-    display: flex;
-    row-gap: 0.5rem;
-    align-items: center;
-    overflow: hidden;
-    max-height: 100%;
-    font-weight: 600;
-    font-size: 1.25rem;
-    column-gap: 3%;
-
-    & > .brand {
-      width: 4.5rem;
-      height: 4.5rem;
-      background-size: cover;
-    }
-
-    & > a {
-      color: #443850;
-      text-decoration: none;
-
-      &:not(:first-child) {
-        transform: translateX(-22px);
-      }
-    }
-  }
-
-  & > button {
-    display: none;
-    border: none;
-    background: none;
-    color: #443850;
-    font-weight: 900;
-    font-size: 3rem;
-    font-family: Courier, monospace;
-    line-height: 1.8rem;
-    user-select: none;
-    transition: transform 0.3s ease-out;
-    transform: translateY(0) rotate(0);
   }
 }
