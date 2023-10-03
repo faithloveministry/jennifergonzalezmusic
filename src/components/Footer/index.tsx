@@ -4,7 +4,7 @@ export const Footer = () => (
   <div class={styles.Footer}>
     <span>
       <i>Designed by qeleb</i>
-      <a href="https://github.com/qeleb">
+      <a href="https://github.com/qeleb" aria-label="Developer GitHub">
         <svg width="1.6rem" viewBox="0 0 98 96">
           <path
             fill="#443850"
