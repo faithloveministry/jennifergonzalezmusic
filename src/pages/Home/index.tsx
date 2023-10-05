@@ -12,7 +12,7 @@ export const Home = () => (
     <div id="top" class={`${styles.intro} ${styles.top}`} style={{ 'background-image': `url(${imgJ6})` }}>
       <Listen />
     </div>
-    <div id="conocernos" class={styles.card}>
+    <div id="inicio" class={styles.card}>
       <div>
         <h2>Te Invitamos a Conocernos</h2>
         <div>

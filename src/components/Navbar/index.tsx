@@ -10,7 +10,7 @@ export const Navbar = () => {
         <a href="#top" class={styles.brand} aria-label="Return to Top">
           Jennifer Gonzalez
         </a>
-        <a href="#conocernos">Inicio</a>
+        <a href="#inicio">Inicio</a>
         <a href="#sobre-mi">Sobre Mi</a>
         <a href="#trayectoria-musical">Trayectoria Musical</a>
         <a href="#bio">Biografía</a>
