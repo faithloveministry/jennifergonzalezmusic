@@ -1,7 +1,8 @@
 import imgDonate from '@/assets/donate.webp';
 import imgJ10 from '@/assets/j10.jpg';
 import imgJ6 from '@/assets/j6.jpg';
-// import imgJ9 from '@/assets/j9.jpg';
+import imgJ9 from '@/assets/j9.jpg';
+import { Carousel } from '@/components/Carousel';
 import { Footer } from '@/components/Footer';
 import { Follow } from '@/components/IconRow/Follow';
 import { Listen } from '@/components/IconRow/Listen';
@@ -9,9 +10,11 @@ import styles from '@/pages/Home/Home.module.scss';
 
 export const Home = () => (
   <div class={styles.Home}>
-    <div id="top" class={`${styles.intro} ${styles.top}`} style={{ 'background-image': `url(${imgJ6})` }}>
-      <Listen />
-    </div>
+    <Carousel numPages={2}>
+      <div id="top" style={{ 'background-image': `url(${imgJ9})` }} />
+      <div style={{ 'background-image': `url(${imgJ6})`, 'background-position': 'center' }} />
+    </Carousel>
+
     <div id="inicio" class={styles.card}>
       <div>
         <h2>Te Invitamos a Conocernos</h2>
@@ -64,7 +67,9 @@ export const Home = () => (
         allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture;web-share"
         allowfullscreen
         loading="lazy"
+        style={{ margin: '0 0 1.5rem' }} //TODO: Remove this after repositioning Listen component
       />
+      <Listen /> {/*TODO: Reposition Listen component */}
     </div>
     <div id="trayectoria-musical" class={styles.card}>
       <div>
@@ -142,7 +147,7 @@ export const Home = () => (
         </div>
       </div>
     </div>
-    <div class={`${styles.intro} ${styles.bottom}`} style={{ 'background-image': `url(${imgJ10})` }}>
+    <div class={styles.socials} style={{ 'background-image': `url(${imgJ10})` }}>
       <Follow />
     </div>
     <Footer />

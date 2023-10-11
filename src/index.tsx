@@ -10,6 +10,7 @@ declare module 'solid-js' {
     type Props<T> = { [K in keyof T as `prop:${string & K}`]?: T[K] };
     type ElementProps<T> = { [K in keyof T]: Props<T[K]> & HTMLAttributes<T[K]> };
     interface IntrinsicElements extends ElementProps<HTMLElementTagNameMap> {
+      div: HTMLAttributes<HTMLDivElement> & { 'prop:scrollLeft'?: number | undefined };
       img: ImgHTMLAttributes<HTMLImageElement> & { 'prop:src'?: string | undefined };
       input: InputHTMLAttributes<HTMLInputElement> & { 'prop:indeterminate'?: boolean };
     }
