@@ -4,7 +4,7 @@
   "editor.tabSize": 2,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": ["source.fixAll"],
+  "editor.codeActionsOnSave": { "source.fixAll": true },
   "[json]": { "editor.formatOnSave": false },
   "javascript.format.enable": false,
   "typescript.format.enable": false,
