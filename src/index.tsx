@@ -12,7 +12,10 @@ declare module 'solid-js' {
     interface IntrinsicElements extends ElementProps<HTMLElementTagNameMap> {
       div: HTMLAttributes<HTMLDivElement> & { 'prop:scrollLeft'?: number | undefined };
       img: ImgHTMLAttributes<HTMLImageElement> & { 'prop:src'?: string | undefined };
-      input: InputHTMLAttributes<HTMLInputElement> & { 'prop:indeterminate'?: boolean };
+      input: InputHTMLAttributes<HTMLInputElement> & {
+        'prop:src'?: string | undefined;
+        'prop:indeterminate'?: boolean;
+      };
     }
   }
 }

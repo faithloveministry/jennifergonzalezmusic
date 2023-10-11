@@ -32,7 +32,7 @@ export const Home = () => (
         <input type="hidden" name="business" value="AT6X4DAVFMNDN" />
         <input type="hidden" name="no_recurring" value="0" />
         <input type="hidden" name="currency_code" value="USD" />
-        <input class={styles['btn-donate']} type="image" name="submit" src={imgDonate} alt="Donate" />
+        <input class={styles['btn-donate']} type="image" name="submit" prop:src={imgDonate} alt="Donate" />
       </form>
       Tu donación es una gran bendición para nuestro ministerio musical. ¡Únete a nosotros y apoya nuestra misión!
     </div>
