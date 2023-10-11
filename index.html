@@ -47,6 +47,14 @@
       }
 
       @font-face {
+        font-family: 'Allexis-fb';
+        src: local('Times New Roman');
+        ascent-override: 117%; /*TODO: Correct font overrides */
+        descent-override: 63%;
+        line-gap-override: 18%;
+      }
+
+      @font-face {
         font-family: 'Montserrat';
         font-display: swap;
         src:
@@ -54,9 +62,17 @@
           url('@/assets/Montserrat.ttf') format('truetype');
       }
 
+      @font-face {
+        font-family: 'Montserrat-fb';
+        src: local('Arial');
+        ascent-override: 110%; /*TODO: Correct font overrides */
+        descent-override: 36%;
+        line-gap-override: 8%;
+      }
+
       * {
         box-sizing: border-box;
-        font-family: Montserrat, sans-serif;
+        font-family: Montserrat, 'Montserrat-fb', sans-serif;
       }
 
       html,

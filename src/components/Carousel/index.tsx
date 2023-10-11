@@ -19,7 +19,11 @@ export const Carousel = (props: ParentProps<{ numPages: number }>) => {
       <div class={styles.controls}>
         <Index each={[...Array(props.numPages)]}>
           {(_, i) => (
-            <button onClick={() => setView(i) + 1 && (touched = true)} class={i === control() ? styles.active : ''} />
+            <button
+              onClick={() => setView(i) + 1 && (touched = true)}
+              class={i === control() ? styles.active : ''}
+              aria-label={`show slide ${i}`}
+            />
           )}
         </Index>
       </div>
