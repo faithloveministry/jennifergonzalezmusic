@@ -1,4 +1,5 @@
 import { resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { visualizer } from 'rollup-plugin-visualizer';
 import { defineConfig, loadEnv } from 'vite';
 import { checker } from 'vite-plugin-checker';
@@ -12,22 +13,28 @@ export default ({ mode }: { mode: 'production' | 'development' | 'test' }) => {
   const ENV = { ...process.env, ...loadEnv(mode, 'env', '') };
 
   return defineConfig({
+    envDir: 'env',
     build: {
-      rollupOptions: { output: { entryFileNames: '[hash:6].js', chunkFileNames: '[hash:6].js', assetFileNames: '[hash:6][extname]' } }, //prettier-ignore
+      rollupOptions: {
+        output: { entryFileNames: '[hash:6].js', chunkFileNames: '[hash:6].js', assetFileNames: '[hash:6][extname]' },
+        treeshake: { propertyReadSideEffects: false, tryCatchDeoptimization: false },
+      },
       target: 'es2020',
-      minify: mode === 'production' ? 'terser' : false,
-      terserOptions:
-        mode === 'production'
-          ? {
-              compress: { arguments: true, ecma: 2020, hoist_funs: true, passes: 3, pure_getters: true, unsafe: true, unsafe_arrows: true, unsafe_comps: true, unsafe_symbols:true }, //prettier-ignore
-              format: { comments: false, ecma: 2020, wrap_func_args: false },
-              mangle: { properties: { regex: /^(?:owned|cleanups|owner|observerSlots|comparator|sourceSlots|running|disposed|tState|updatedAt|pure|suspense|inFallback|effects|_\$host|numPages|_v\$|_v\$2|_v\$3|_v\$4|_v\$5|_v\$6|_v\$7|_v\$8|_v\$9|_v\$10)$/ } }, //prettier-ignore
-            }
-          : undefined,
+      minify: 'terser',
+      cssMinify: 'lightningcss',
+      terserOptions: {
+        ecma: 2020,
+        compress: { drop_console: true, drop_debugger: true, arguments: true, hoist_funs: true, passes: 3, unsafe: true, unsafe_arrows: true, unsafe_comps: true, unsafe_symbols: true }, //prettier-ignore
+        format: { comments: false, wrap_func_args: false },
+        mangle: { properties: { regex: /^(?:observers|observerSlots|comparator|updatedAt|owned|route|score|when|sourceSlots|fn|cleanups|owner|pure|suspense|inFallback|isRouting|beforeLeave|Provider|preloadRoute|outlet|utils|explicitLinks|actionBase|resolvePath|branches|routerState|parsePath|renderPath|originalPath|effects|tState|disposed|sensitivity|navigatorFactory|keyed)$/ } }, //prettier-ignore
+      },
       modulePreload: { polyfill: false }, // Delete this line if outputting more than 1 chunk
     },
     plugins: [
-      solid(),
+      solid({
+        solid: { omitNestedClosingTags: true },
+        babel: { plugins: [['@babel/plugin-transform-typescript', { optimizeConstEnums: true, isTSX: true }]] },
+      }),
       checker({ typescript: true, overlay: false, enableBuild: true }),
       createHtmlPlugin({
         pages: [
@@ -42,19 +49,26 @@ export default ({ mode }: { mode: 'production' | 'development' | 'test' }) => {
         }, //prettier-ignore
       }),
       optimizeCssModules(),
-      sassDts({ enabledMode: ['development', 'production'] }),
-      ENV.ANALYZE === 'true' && visualizer({ template: 'treemap', open: true, gzipSize: true, brotliSize: true, filename: resolve(__dirname, 'dist/analyze.html') }), //prettier-ignore
+      sassDts({ enabledMode: ['development', 'production'], prettierFilePath: resolve(fileURLToPath(new URL('.', import.meta.url)), '.prettierrc') }), //prettier-ignore
+      ENV.ANALYZE === 'true' &&
+        visualizer({
+          template: 'treemap',
+          open: true,
+          gzipSize: true,
+          brotliSize: true,
+          filename: resolve(fileURLToPath(new URL('.', import.meta.url)), 'dist/analyze.html'),
+        }),
     ].filter(Boolean),
-    resolve: { alias: { '@': resolve(__dirname, './src') }, conditions: ['browser', 'development'] },
+    resolve: { alias: { '@': resolve(fileURLToPath(new URL('.', import.meta.url)), 'src') }, dedupe: ['solid-js'] },
     test: {
       globals: true,
       environment: 'jsdom',
-      transformMode: { web: [/\.[jt]sx?$/] },
-      setupFiles: [resolve(__dirname, './src/__test__/setupTests.ts')],
-      include: ['./src/**/*.{test,spec}.{js,cjs,mjs,jsx,ts,cts,mts,tsx}'],
+      include: ['src/**/*.{test,spec}.{js,cjs,mjs,jsx,ts,cts,mts,tsx}'],
+      setupFiles: [resolve(fileURLToPath(new URL('.', import.meta.url)), 'src/__test__/setupTests.ts')],
+      deps: { optimizer: { web: { exclude: ['solid-js'] } } },
       coverage: {
         reporter: ['text', 'lcov'],
-        exclude: configDefaults.coverage.exclude!.concat(['src/__test__/setupTests.ts']),
+        exclude: configDefaults.coverage.exclude!.concat(['src/__test__', 'src/index.tsx']),
       },
     },
   });

@@ -2,7 +2,7 @@
   display: grid;
   grid-template-rows: 5fr 1fr;
   overflow: hidden;
-  height: 30rem;
+  height: 30em;
 
   & > .slider {
     display: flex;
@@ -19,9 +19,9 @@
     }
 
     & > div {
-      min-width: min(120rem, 100vw);
+      min-width: min(120em, 100vw);
       background-size: cover;
-      filter: drop-shadow(0 0 0.3rem #443850);
+      filter: drop-shadow(0 0 0.3em #443850);
       scroll-snap-align: center;
       scroll-snap-stop: always;
     }
@@ -31,9 +31,9 @@
     z-index: 1;
     display: flex;
     grid-area: 2 / 1 / 3 / 2;
-    gap: 0.3rem;
+    gap: 0.3em;
     margin: auto;
-    padding: 0.1rem;
+    padding: 0.1em;
     border-radius: 10px;
     background: #00000010;
 

@@ -1,7 +1,7 @@
 import { render } from 'solid-js/web';
 import { App } from '@/App';
 
-render(() => <App />, document.querySelector('body')!);
+render(() => <App />, document.body);
 
 // Extend JSX for Solid
 declare module 'solid-js' {

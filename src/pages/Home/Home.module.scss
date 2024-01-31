@@ -17,7 +17,7 @@
       width: clamp(45%, 70rem, 100%);
       margin: auto;
       padding: 2rem;
-      font-size: 1.1rem;
+      font-size: 1.1em;
 
       & > h2 {
         margin: 1rem 0;
@@ -34,7 +34,7 @@
     padding: 2rem 0.5rem;
     background: #443850;
     color: #fff;
-    font-size: 1.1rem;
+    font-size: 1.1em;
     text-align: center;
 
     & > iframe {
@@ -62,14 +62,14 @@
 
   .socials {
     width: 100%;
-    height: 25rem;
+    height: 25em;
     background-position: center;
     background-size: cover;
-    filter: drop-shadow(0 0 0.3rem #443850);
+    filter: drop-shadow(0 0 0.3em #443850);
 
     & > div {
       position: relative;
-      top: 2rem;
+      top: 2em;
     }
   }
 }

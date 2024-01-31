@@ -1,13 +1,13 @@
 .IconRow {
   display: flex;
   justify-content: space-around;
-  width: min(66rem, calc(100vw - 4rem));
+  width: min(66em, calc(100vw - 4em));
   margin: auto;
-  padding: 0.3rem;
+  padding: 0.3em;
   border: 1px solid #443850;
   border-radius: 10px;
   background: #44385070;
-  filter: drop-shadow(0 0 0.75rem #443850);
+  filter: drop-shadow(0 0 0.75em #443850);
   transform: scale(1);
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
@@ -17,13 +17,13 @@
 
     & > svg,
     & > img {
-      height: 2.2rem;
-      filter: drop-shadow(0 0 0.2rem #443850);
+      height: 2.2em;
+      filter: drop-shadow(0 0 0.2em #443850);
       fill: #ffb7c3;
       transition: all 0.2s ease-out;
 
       @media screen and (max-width: 600px) {
-        height: 1.75rem;
+        height: 1.75em;
       }
 
       & > path {
@@ -41,7 +41,7 @@
       transform: scale(1.05);
 
       & > svg {
-        filter: drop-shadow(0 0 0.7rem #443850);
+        filter: drop-shadow(0 0 0.7em #443850);
         fill: #fff;
 
         & > path {
