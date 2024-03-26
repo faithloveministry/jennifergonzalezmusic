@@ -13,6 +13,6 @@ export const Footer = () => (
         </svg>
       </a>
     </span>
-    <span>Jennifer Gonzalez Music — 2023</span>
+    <span>Jennifer Gonzalez Music — 2024</span>
   </div>
 );

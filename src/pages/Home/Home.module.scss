@@ -1,6 +1,7 @@
 .Home {
   overflow: hidden auto;
   height: 100%;
+  padding-top: 4.5rem;
   background: linear-gradient(#443850 0 50%, #ffb7c3 50% 100%);
   color: #2a1e36;
   scroll-behavior: smooth; /* stylelint-disable-line plugin/no-unsupported-browser-features */
@@ -9,6 +10,7 @@
   & > .card {
     border: 1px solid #443850;
     background: #ffb7c3;
+    scroll-margin-top: 4.5rem;
 
     & > div {
       display: flex;

@@ -1,0 +1,17 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  font-family: Montserrat, 'Montserrat-fb', sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  -webkit-tap-highlight-color: transparent; // Remove gray highlights on links (iOS)
+  -webkit-text-size-adjust: 100%; // Keep font-size after rotation (iOS)
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}

@@ -11,7 +11,7 @@
     <link rel="apple-touch-icon" href="/icon192.png" />
     <link rel="manifest" href="/manifest.json" />
     <!--TODO: Open Graph title & description below -->
-    <meta name="description" content="Jennifer Gonzalez Music">
+    <meta name="description" content="Jennifer Gonzalez Music" />
     <meta property="og:title" content="Jennifer Gonzalez Music" />
     <meta property="og:description" content="Jennifer Gonalez Music" />
     <meta property="og:image" content="/banner.jpg" />
@@ -21,7 +21,7 @@
     <script type="text/javascript">
       (l => {
         if (l.search[1] === '/') {
-          window.history.replaceState(
+          history.replaceState(
             null,
             null,
             l.pathname.slice(0, -1) +
@@ -33,7 +33,7 @@
               l.hash
           );
         }
-      })(window.location);
+      })(location);
     </script>
 
     <!-- Global Styles -->
@@ -43,7 +43,7 @@
         font-display: swap;
         src:
           local('Allexis'),
-          url('@/assets/Allexis.ttf') format('truetype');
+          url('@/assets/Allexis.woff2') format('woff2');
       }
 
       @font-face {
@@ -59,7 +59,7 @@
         font-display: swap;
         src:
           local('Montserrat'),
-          url('@/assets/Montserrat.ttf') format('truetype');
+          url('@/assets/Montserrat.woff2') format('woff2');
       }
 
       @font-face {
@@ -68,17 +68,6 @@
         ascent-override: 110%; /*TODO: Correct font overrides */
         descent-override: 36%;
         line-gap-override: 8%;
-      }
-
-      * {
-        box-sizing: border-box;
-        font-family: Montserrat, 'Montserrat-fb', sans-serif;
-      }
-
-      html,
-      body {
-        height: 100%;
-        margin: 0;
       }
     </style>
   </head>
